@@ -7,6 +7,7 @@ class Account {
 private:
   int accountID;
   int balance;
+  char *customerName;
 
 public:
   Account(int ID, int money, char *name);
