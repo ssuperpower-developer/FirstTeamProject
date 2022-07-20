@@ -23,3 +23,5 @@ BankingSystemVer06.cpp
 # 이정훈
 
 # 홍준혁
+.idea/
+cmake-build-debug/

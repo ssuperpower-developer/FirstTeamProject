@@ -1,7 +1,10 @@
 #include "Account.h"
 #include <iostream>
+#include <cstring>
 
 using namespace std;
+
+
 
 int main(void) {
   int choice;
@@ -33,3 +36,4 @@ int main(void) {
 
     return 0;
   }
+}
