@@ -4,7 +4,7 @@
 using namespace std;
 
 //출금액 반환, 부족시 0 반환
-int Withdraw(int money){
+int Account::Withdraw(int money){
         
     static string str[50]="잔액이 부족합니다";
 
