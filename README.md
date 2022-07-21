@@ -19,16 +19,16 @@
 
 원하는 정보 입력하시면 됩니다 😍 😍
 
-|   Name   |  Roles  |          Email           |
-| :------: | :-----: | :----------------------: |
-| `최지웅` | Dirctor | jwchoi179@soongsil.ac.kr |
-| `김현수` |         |
-| `김지은` |         |
-| `김선환` |         |
-|  `유진`  |         |
-| `이정훈` |         |
-| `최지우` |         |
-| `홍준혁` |         |
+|  Name  |          Email           |
+| :----: | :----------------------: |
+| 최지웅 | jwchoi179@soongsil.ac.kr |
+| 김현수 |  rover0811@hotmail.com   |
+| 김지은 |   wldmsk0918@gmail.com   |
+| 김선환 | rlatjsghks4647@naver.com |
+|  유진  | jini1514@soongsil.ac.kr  |
+| 이정훈 |  dominanthat@gmail.com   |
+| 최지우 |  jiwoo020801@gmail.com   |
+| 홍준혁 |  junhyeok2166@daum.net   |
 
 ## Purpose
 
