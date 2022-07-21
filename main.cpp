@@ -1,37 +1,36 @@
 #include "Account.h"
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
 int main(void) {
+  AccountHandler manager;
   int choice;
 
   while (1) {
-    ShowMenu();
+    manager.ShowMenu();
     cout << "선택: ";
     cin >> choice;
     cout << endl;
 
     switch (choice) {
     case MAKE:
-      MakeAccount();
+      manager.MakeAccount();
       break;
     case DEPOSIT:
-      DepositMoney();
+      manager.DepositMoney();
       break;
     case WITHDRAW:
-      WithdrawMoney();
+      manager.WithdrawMoney();
       break;
     case INQUIRE:
-      ShowAllAccInfo();
+      manager.ShowAllAccInfo();
       break;
     case EXIT:
       return 0;
     default:
       cout << "Illegal selection.." << endl;
     }
-
-    return 0;
   }
+  return 0;
 }

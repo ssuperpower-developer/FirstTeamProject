@@ -1,6 +1,9 @@
 # 본인의 이름 밑에 작성해주세요!! 
 # 최지웅
 .vscode
+build
+TestMain.cpp
+CMakeLists.txt
 
 # Reference Files
 BankingSystemVer01.cpp
@@ -23,5 +26,7 @@ BankingSystemVer06.cpp
 # 이정훈
 
 # 홍준혁
+
+# Common
 .idea/
 cmake-build-debug/
