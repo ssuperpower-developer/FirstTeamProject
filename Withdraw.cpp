@@ -5,16 +5,14 @@ using namespace std;
 
 //출금액 반환, 부족시 0 반환
 int Withdraw(int money){
-    /*
-    int account;
-    cout<<"[출금]"<<endl;
-    cout<<"계좌번호를 입력하세요";
-    cin>>account;
-    cout<<"출금액";
-    cin>>money;
-    */
-    if(balance<money){    //잔액<돈
-        return 0;
+        
+    static string str[50]="잔액이 부족합니다";
+
+    if(balance<money){    //잔액<출금액
+         cout<<str<<endl;
+    }
+    if(balance==money){
+        return 0;         //잔액=출금액 일시 0 반환
     }
     balance-=money;
     return money;
