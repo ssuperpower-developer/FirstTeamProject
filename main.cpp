@@ -1,10 +1,8 @@
 #include "Account.h"
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
 using namespace std;
-
-
 
 int main(void) {
   int choice;
