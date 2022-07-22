@@ -34,3 +34,59 @@
 
 이 레포지토리는 Pull Request를 포함한 \
 `Git`을 사용하여 협업을 연습하는 시간을 가져봅니다.
+
+## Parts
+
+### Account Class
+
+```C++
+class Account {
+private:
+  int accountID;
+  int balance;
+  char *cusName;
+
+public:
+  // 김현수 담당
+  Account(int ID, int money, char *name);
+  Account(const Account &ref);
+
+  int GetAccID() const;
+  // 최지우 담당
+  void Deposit(int money);
+
+  // 김지은 담당
+  int Withdraw(int money);
+
+  // 유진 담당
+  void ShowAccInfo() const;
+  ~Account();
+};
+```
+
+### Account Handler Class
+
+```C++
+class AccountHandler {
+private:
+  Account *accArr[100];
+  int accNum;
+
+public:
+  AccountHandler();
+  void ShowMenu(void) const;
+
+  // 이정훈 담당
+  void MakeAccount(void);
+
+  // 홍준혁 담당
+  void DepositMoney(void);
+
+  // 김선환 담당
+  void WithdrawMoney(void);
+
+  // 최지우 담당
+  void ShowAllAccInfo(void) const;
+  ~AccountHandler();
+};
+```
