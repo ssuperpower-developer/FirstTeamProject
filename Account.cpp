@@ -6,14 +6,14 @@ using namespace std;
 
 // 김현수
 Account::Account(const Account &ref)
-    : accountID(ref.accountID), balance(ref.balance) { //복사 생성자
-  cusName = new char[strlen(ref.cusName) + 1];         //널문자 자리 하나
-  strcpy(cusName, ref.cusName);                        // 깊은 복사
+    : accountID(ref.accountID), balance(ref.balance) {   //복사 생성자
+  customerName = new char[strlen(ref.customerName) + 1]; //널문자 자리 하나
+  strcpy(customerName, ref.customerName);                // 깊은 복사
 }
 Account::Account(int ID, int money, char *name)
-    : accountID(ID), balance(money) {   // 생성자
-  cusName = new char[strlen(name) + 1]; //널문자 자리 하나
-  strcpy(cusName, name);                // 깊은 복사
+    : accountID(ID), balance(money) {        // 생성자
+  customerName = new char[strlen(name) + 1]; //널문자 자리 하나
+  strcpy(customerName, name);                // 깊은 복사
 }
 
 int Account::GetAccID() const { return this->accountID; }
@@ -39,5 +39,5 @@ int Account::Withdraw(int money) {
 void Account::ShowAccInfo() const {
   cout << "계좌 : " << accountID << endl;
   cout << "잔액 : " << balance << endl;
-  cout << "이름 : " << cusName << endl;
+  cout << "이름 : " << customerName << endl;
 }
