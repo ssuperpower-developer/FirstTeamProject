@@ -41,3 +41,17 @@ void Account::ShowAccInfo() const {
   cout << "잔액 : " << balance << endl;
   cout << "이름 : " << customerName << endl;
 }
+
+//최지우
+void AccountHandler::ShowAllAccInfo() const{
+  for(int i=0; i<accNum; i++){
+    accArr[i]->ShowAccInfo();
+    cout<<endl;
+  }
+}
+
+AccountHandler::~AccountHandler(){
+  for(int i=0; i<accNum; i++){
+    delete accArr[i];
+  }
+}
