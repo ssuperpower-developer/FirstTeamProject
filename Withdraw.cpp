@@ -1,9 +1,11 @@
+#include "Account.h"
 #include <iostream>
 #include <string.h>
-#include "Account.h"
+
 using namespace std;
 
 //출금액 반환, 부족시 0 반환
+
 int Account::Withdraw(int money){
         
     if(balance<money){    //잔액<출금액-> 잔액 부족
