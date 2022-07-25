@@ -39,3 +39,8 @@ void Account::ShowAccInfo() const {
   cout << "잔액 : " << balance << endl;
   cout << "이름 : " << customerName << endl;
 }
+
+//이정훈
+Account::~Account() {
+
+}
