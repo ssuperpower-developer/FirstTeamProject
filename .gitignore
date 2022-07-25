@@ -6,12 +6,6 @@ TestMain.cpp
 CMakeLists.txt
 
 # Reference Files
-BankingSystemVer01.cpp
-BankingSystemVer02.cpp
-BankingSystemVer03.cpp
-BankingSystemVer04.cpp
-BankingSystemVer05.cpp
-BankingSystemVer06.cpp
 
 # 김현수
 
