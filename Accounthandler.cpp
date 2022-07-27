@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+
 void AccountHandler::WithdrawMoney(void) {
   int money;
   int id;
@@ -38,4 +40,30 @@ AccountHandler::~AccountHandler() {
   for (int i = 0; i < accNum; i++) {
     delete accArr[i];
   }
+}
+
+//이정훈
+
+void AccountHandler::ShowMenu() const {
+    //MAKE DEPOSIT WITHDRAW INQUIRE EXIT
+    cout << "메뉴를 선택하십시오." << endl;
+    cout << "1. 계좌 만들기를 하려면 MAKE를 입력하세요" << endl;
+    cout << "2. 예금을 하려면  DEPOSIT를 입력하세요" << endl;
+    cout << "3. 출금을 하려면  WITHDRAW를 입력하세요" << endl;
+    cout << "4. 계좌정보를 확인하려면 INQUIRE를 입력하세요" << endl;
+    cout << "5. 종료하시려면 EXIT를 입력하세요" << endl;
+    cout << "입력 :";
+}
+
+void AccountHandler::MakeAccount() {
+    cout << "계좌를 생성합니다" << endl;
+    cout << "ID, 잔액, 이름을 차례대로 입력해주세요 :";
+
+    int id = 0;
+    int money = 0;
+    char name[50];
+
+    cin >> id >> money >> name;
+
+    AccountHandler::accArr[accNum++] = new Account(id, money, name);
 }
